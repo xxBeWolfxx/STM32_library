@@ -74,9 +74,6 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 		}
 		HAL_UART_Receive_IT(Serial.port, &Serial.serialVariable, Serial.size);
 
-//	Serial.serialData = (char *)Serial.arrayBufor;
-//	HAL_UART_Receive_IT(Serial.port, Serial.arrayBufor, Serial.size);
-
 
 	}
 	if (huart->Instance == huart1.Instance){
@@ -85,18 +82,6 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 
 	}
 
-
-
-
-//	if (huart->Instance == huart1.Instance) {
-//		switch (*espBoard.espSerial.serialVariable) {
-//		case std::to_string(espBoard.connectingESP): {
-//			break;
-//		}
-//		default:{
-//
-//		}
-//		}
 
 }
 
