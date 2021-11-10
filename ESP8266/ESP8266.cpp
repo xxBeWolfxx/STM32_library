@@ -2,7 +2,7 @@
  * ESP8266.cpp
  *
  *  Created on: 5 paź 2021
- *      Author: arkad
+ *      Author: Arkadiusz Kruszyński
  */
 
 #include <ESP8266.h>
